@@ -1,0 +1,618 @@
+
+/*PAGE 1 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(12px);
+    background: rgba(15, 23, 42, 0.8) !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* Hero section */
+#hero {
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, #4f46e5, #020617);
+    color: #f9fafb;
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.hero-title {
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #e5e7eb;
+}
+
+.hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(248, 250, 252, 0.9);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.6);
+}
+
+.section-padding {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.section-subtitle {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+    /*Section shadow separator If I want to add that later*/
+.section-separator {
+    position: relative;
+}
+
+.section-separator::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px; /* moves shadow downwards */
+    height: 40px;
+
+    /* soft gradient shadow */
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.08),
+        rgba(0, 0, 0, 0)
+    );
+
+    pointer-events: none;
+}
+
+.bg-soft {
+    background: #f9fafb;
+}
+
+.badge-skill {
+    border-radius: 999px;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+}
+
+.timeline-card {
+    border-left: 3px solid #4f46e5;
+    border-radius: 0.75rem;
+}
+
+.timeline-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: #4f46e5;
+    position: absolute;
+    left: -6px;
+    top: 12px;
+}
+
+.table-skills th {
+    width: 30%;
+    white-space: nowrap;
+}
+
+/* Base bar (track) */
+.lang-bar {
+    height: 8px;
+    border-radius: 999px;
+    background-color: #111827;   /* dark background behind gradient */
+    overflow: hidden;
+}
+
+/* Filled part – gradient */
+.lang-bar-fill {
+    height: 100%;
+    width: 0; /* JS animates this */
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        #111827 0%,
+        #4430c0 10%,
+        #3023ae 100%
+    );
+    transition: width 1.2s ease-out;
+}
+
+/* Back-to-top button */
+#backToTop {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1050;
+    display: none;
+}
+
+footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 1.25rem 0;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+@media (max-width: 767.98px) {
+    #hero {
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-photo-wrapper {
+        margin-bottom: 1.75rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+        /* Dark mode global */
+.dark-mode {
+    background-color: #0f172a !important;
+    color: #e2e8f0 !important;
+}
+
+/* Navbar */
+.dark-mode .navbar {
+    background-color: #1e293b !important;
+    border-bottom-color: #334155 !important;
+}
+
+/* Cards and sections */
+.dark-mode .content-card,
+.dark-mode .card {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+
+/* Text colors */
+.dark-mode .section-title {
+    color: #f1f5f9 !important;
+}
+
+.dark-mode .section-subtitle {
+    color: #94a3b8 !important;
+}
+
+.dark-mode p, 
+.dark-mode li {
+    color: #e2e8f0 !important;
+}
+
+/* Buttons */
+.dark-mode .btn-primary {
+    background-color: #4f46e5 !important;
+    border-color: #4f46e5 !important;
+}
+
+.dark-mode .btn-outline-light {
+    color: #e2e8f0 !important;
+    border-color: #e2e8f0 !important;
+}
+
+/* Background soft sections */
+.dark-mode .bg-soft {
+    background-color: #1e293b !important;
+}
+
+/* Table (card + education) in dark mode */
+.dark-mode .card {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+
+/* Whole table text colour */
+.dark-mode .table {
+    color: #e2e8f0 !important;
+}
+
+/* Header row */
+.dark-mode .table thead th {
+    background-color: #1e293b !important;
+    color: #f1f5f9 !important;
+    border-color: #334155 !important;
+}
+
+/* Body cells */
+.dark-mode .table tbody td {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+
+/* If I ever use <th> inside tbody */
+.dark-mode .table tbody th {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+
+/* In case I ever change it so that the table uses .table-striped */
+.dark-mode .table.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #1e293b !important;
+}
+
+.dark-mode .table tbody td,
+.dark-mode .table tbody th {
+    border-color: #334155 !important;
+}
+
+/* Horizontal rule inside card */
+.dark-mode hr {
+    border-color: #334155 !important;
+}
+
+/* Makes muted text readable in dark mode */
+.dark-mode .text-muted {
+    color: #9ca3af !important;   /* soft light grey */
+}
+
+/* --- SKILL BADGES (LIGHT MODE) --- */
+.skill-badge {
+    background-color: #3b82f6 !important;   /* blue for light mode */
+    color: #ffffff !important;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover in light mode */
+.skill-badge:hover {
+    background-color: #2563eb !important;
+}
+
+
+/* --- SKILL BADGES (DARK MODE OVERRIDE) --- */
+.dark-mode .skill-badge {
+    background-color: #4f46e5 !important;   /* purple for dark mode */
+    color: #ffffff !important;
+}
+
+/* Hover in dark mode */
+.dark-mode .skill-badge:hover {
+    background-color: #4338ca !important;
+}
+
+/* Footer in dark mode */
+.dark-mode footer {
+    background-color: #1e293b !important;   /* same as navbar */
+    color: #e2e8f0 !important;              /* light text */
+    border-top-color: #334155 !important;   /* subtle border */
+}
+
+/* Base styling for the scroll-to-top button */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    border-radius: 50% !important;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    color: #ffffff !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* LIGHT MODE (BLUE) */
+#backToTop {
+    background-color: #3b82f6 !important; /* blue */
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+}
+
+#backToTop:hover {
+    background-color: #2563eb !important;
+}
+
+/* DARK MODE (PURPLE) */
+.dark-mode #backToTop {
+    background-color: #4f46e5 !important; /* purple */
+    box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4);
+}
+
+.dark-mode #backToTop:hover {
+    background-color: #4338ca !important;
+}
+
+/* DARK MODE — CONTACT MODAL */
+.dark-mode .modal-content {
+    background-color: #1e293b !important;   /* dark navy */
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+}
+
+.dark-mode .modal-header,
+.dark-mode .modal-footer {
+    border-color: #334155 !important;
+}
+
+.dark-mode .modal-title {
+    color: #f1f5f9 !important;
+}
+
+/* Inputs */
+.dark-mode .modal-content input,
+.dark-mode .modal-content textarea {
+    background-color: #0f172a !important;   /* slightly darker */
+    color: #e2e8f0 !important;
+    border: 1px solid #334155 !important;
+}
+
+.dark-mode .modal-content input::placeholder,
+.dark-mode .modal-content textarea::placeholder {
+    color: #94a3b8 !important;              /* muted grey */
+}
+
+.dark-mode .modal-content input:focus,
+.dark-mode .modal-content textarea:focus {
+    border-color: #4f46e5 !important;       /* purple focus border */
+    box-shadow: 0 0 0 1px #4f46e5 !important;
+}
+
+/* Close button */
+.dark-mode .btn-close {
+    filter: invert(1) brightness(1.4);       /* make the X visible on dark */
+}
+
+#themeToggleWrapper {
+    gap: 0.35rem;
+}
+
+#themeIcon {
+    font-size: 1.1rem;
+    color: #facc15; /* sun for light mode */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode #themeIcon {
+    color: #e5e7eb; /* moon color */
+}
+
+/* Dark mode card outline */
+.dark-mode .card,
+.dark-mode .content-card,
+.dark-mode .project-card {
+    border: 1px solid #334155 !important;     /* slightly lighter slate border */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);   /* subtle depth */
+}
+
+.btn-outline-light:hover {
+    color: #0f172a !important;                /* dark navy text on hover */
+    background-color: #ffffff !important;     /* keep white hover background */
+    border-color: #ffffff !important;
+}
+
+
+
+/*Page 2 -------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+.navbar {
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.section-subtitle {
+    color: #6b7280;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.75rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+}
+
+.feature-card + .feature-card {
+    margin-top: 1.5rem;
+}
+
+code {
+    font-size: 0.9em;
+    background: #e5e7eb;
+    padding: 0.05rem 0.25rem;
+    border-radius: 4px;
+}
+
+footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 1.2rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* Theme toggle wrapper */
+#themeToggleWrapper {
+    gap: 0.35rem;
+}
+
+#themeIcon {
+    font-size: 1.1rem;
+    color: #facc15; /* sun */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+    background-color: #0f172a !important;
+    color: #e2e8f0 !important;
+}
+
+.dark-mode .navbar {
+    background-color: #1e293b !important;
+    border-bottom-color: #334155 !important;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+    color: #e5e8f0 !important;
+}
+
+.dark-mode .nav-link:hover {
+    color: #ffffff !important;
+}
+
+.dark-mode .feature-card {
+    background-color: #1e293b !important;
+    border-color: #334155 !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.55);
+}
+
+.dark-mode code {
+    background: #111827;
+    color: #e5e7eb;
+}
+
+.dark-mode footer {
+    background-color: #1e293b;
+    border-top-color: #334155;
+    color: #94a3b8;
+}
+
+.dark-mode #themeIcon {
+    color: #e5e7eb;
+}
+
+.dark-mode .text-muted {
+    color: #9ca3af !important;
+}
+
+/* Button colours (consistent with main site) */
+.btn-primary {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.dark-mode .btn-primary {
+    background-color: #4f46e5;
+    border-color: #4f46e5;
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #4338ca;
+    border-color: #4338ca;
+}
+
+body {
+    padding-top: 40px;
+}
+
+
+
+
+/* UNIVERSAL NAVBAR setting*/
+.navbar {
+    background-color: rgba(15, 23, 42, 0.72) !important; /* bluish transparent background */
+    backdrop-filter: blur(12px);                          /* frosted glass effect */
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);   /* soft subtle line */
+}
+
+/* Text colour in bright mode */
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #e2e8f0 !important; /* soft off-white color*/
+}
+
+/* Hover */
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* DARK MODE NAVBAR */
+.dark-mode .navbar {
+    background-color: rgba(15, 23, 42, 0.92) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dark-mode .navbar .navbar-brand,
+.dark-mode .navbar .nav-link {
+    color: #f1f5f9 !important;
+}
+
+.dark-mode .navbar .navbar-brand:hover,
+.dark-mode .navbar .nav-link:hover {
+    color: #ffffff !important;
+}

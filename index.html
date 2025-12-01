@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Rolando | Computing & IT Management Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+    <!-- Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">Rolando | Portfolio</a>
+
+            <!-- Toggle for Dark Mode -->
+            <div class="d-flex align-items-center ms-3" id="themeToggleWrapper">
+                <i id="themeIcon" class="bi bi-sun-fill me-2"></i>
+
+                <div class="form-check form-switch m-0">
+                    <input class="form-check-input" type="checkbox" id="themeToggle">
+                </div>
+            </div>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Bootstrap Features</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 hero-photo-wrapper">
+                    <!-- src with my photo file -->
+                    <img
+                        src="images/Me.JPG"
+                        alt="Portrait of Me"
+                        class="hero-photo"
+                    />
+                </div>
+                <div class="col-lg-7">
+                    <div class="hero-pill mb-3">
+                        <span class="badge bg-light text-dark rounded-pill me-1"></span>
+                        Computing &amp; IT Management Student
+                    </div>
+                    <h1 class="hero-title mb-3">Rolando <span class="fw-light">Markul</span></h1>
+                    <p class="hero-subtitle mb-4">
+                    Aspiring and enthusiastic student with a strong background in
+                    Information Technology Management, Cloud Computing and Security,
+                    seeking an opportunity in computing or IT management. I am excited
+                    to apply my technical skills and understanding of technology within
+                    a collaborative team environment. With a proven ability to grasp
+                    complex concepts and work effectively in teams, I aim to contribute
+                    to an organisation while expanding my knowledge and gaining
+                    hands-on experience in a professional setting.
+                    </p>
+                    <div
+                        class="d-flex flex-wrap gap-2 hero-actions align-items-center"
+                    >
+                        <a href="#contact" class="btn btn-primary btn-lg px-4">
+                            Get in touch
+                        </a>
+                        <a href="#projects" class="btn btn-outline-light btn-lg px-4">
+                            View projects
+                        </a>
+                        <span class="d-block d-lg-inline-block text-sm text-light-50 ms-lg-2 mt-2 mt-lg-0"
+                            style="font-size: 0.85rem; color: #e5e7eb;">
+                            Based in <strong>Dublin, Ireland</strong>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-padding bg-soft">
+        <div class="container">
+            <div class="row justify-content-between align-items-start g-4">
+                <div class="col-lg-7">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle mb-3">
+                        A brief introduction to who I am and what I can bring to a team.
+                    </p>
+                    <p>
+                        I am an aspiring IT professional currently studying
+                        <strong>Computing in Information Technology Management</strong>. I enjoy tackling
+                        complex technical challenges, breaking them into manageable pieces and delivering
+                        clear, practical solutions. I work well in team environments, communicate
+                        effectively with both technical and non-technical stakeholders, and I’m always
+                        eager to learn new technologies.
+                    </p>
+                    <p>
+                        My academic work, projects and work experience have given me hands-on experience with databases,
+                        networking, scripting and cloud-based tools. I’m now looking to build on this
+                        foundation through further experience at work where I can contribute from day one while
+                        continuing to grow professionally.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body">
+                            <h6 class="text-uppercase text-muted mb-2" style="font-size: 0.75rem;">
+                                Quick facts
+                            </h6>
+                            <ul class="list-unstyled mb-0 small">
+                                <li class="mb-2">
+                                    <strong>Degree:</strong> BSc (Hons) Computing in IT Management
+                                </li>
+                                <li class="mb-2">
+                                    <strong>Interests:</strong> Databases, networking, automation, security
+                                </li>
+                                <li class="mb-2">
+                                    <strong>Currently seeking:</strong> Full time work placement in
+                                    computing or IT
+                                </li>
+                                <li class="mb-2">
+                                    <strong>Strengths:</strong> Problem-solving, communication, teamwork,
+                                    attention to detail
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle mb-4">
+                Academic background and performance.
+            </p>
+
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-2">
+                        <div>
+                            <h5 class="mb-0">
+                                BSc (Hons) Computing in Information Technology Management
+                            </h5>
+                            <span class="text-muted small">(NFQ Level 8)</span>
+                        </div>
+                        <div class="text-md-end mt-2 mt-md-0 small text-muted">
+                            Technology University Dublin (TUD)<br />
+                            4th Year Student
+                        </div>
+                    </div>
+                    <hr />
+                    <h6 class="mb-2">Module Performance (GPA by Year)</h6>
+                    <div class="table-responsive">
+                        <table class="table table-sm align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Year</th>
+                                    <th scope="col">GPA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Year 1</td>
+                                    <td>2.31</td>
+                                </tr>
+                                <tr>
+                                    <td>Year 2</td>
+                                    <td>2.21</td>
+                                </tr>
+                                <tr>
+                                    <td>Year 3</td>
+                                    <td>2.25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="small text-muted mt-2 mb-0">
+                        GPA values are approximate and for illustrative purposes; full transcripts
+                        available on request.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-padding bg-soft">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle mb-4">
+                Selected academic work demonstrating technical ability and teamwork.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                2nd Year Project: Prison System Database with Live Tracking
+                            </h5>
+                            <p class="text-muted small mb-2">
+                                Web application for managing prisoners, guards, cells, events and job
+                                assignments, with real-time location updates.
+                            </p>
+                            <p>
+                                Collaborated on a dynamic web application designed to enhance prison
+                                management through a comprehensive database. The system stores key
+                                information about prisoners, guards, cells, events and job assignments.
+                            </p>
+                            <p>
+                                A real-time <strong>events table</strong> logs timestamps and locations for
+                                each prisoner, updated using the MQTT messaging protocol to ensure accurate
+                                tracking. A user-friendly interface enables seamless interaction with the
+                                database, while an “About” page highlights each team member’s role and
+                                contributions.
+                            </p>
+                            <h6 class="mt-3">Tools &amp; Technologies</h6>
+                            <ul class="small mb-3">
+                                <li>Application Development: Visual Studio Code</li>
+                                <li>Front-end: HTML, CSS, JavaScript, Bootstrap</li>
+                                <li>Database: Supabase (SQL) for data storage and management</li>
+                                <li>Messaging: MQTT with Google Cloud Shell for real-time updates</li>
+                                <li>Collaboration: Azure DevOps for planning, communication and version control</li>
+                            </ul>
+                            <p class="mb-0">
+                                This project strengthened my skills in full-stack development, database
+                                design and cloud services, and underlined the value of teamwork and
+                                structured project management on complex systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- I can add more project cards here for 4th year work later in the future -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h6 class="text-uppercase text-muted mb-2" style="font-size: 0.75rem;">
+                                Project focus areas
+                            </h6>
+                            <ul class="small mb-0">
+                                <li>Relational database design</li>
+                                <li>Real-time data processing</li>
+                                <li>Secure data handling</li>
+                                <li>Responsive front-end design</li>
+                                <li>Agile teamwork and sprint planning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Work History</h2>
+            <p class="section-subtitle mb-4">
+                Paid and voluntary roles.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-lg-6 position-relative">
+                    <div class="timeline-dot"></div>
+                    <div class="card border-0 shadow-sm timeline-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <h5 class="card-title mb-0">
+                                    South Dublin County Council – ICT End User Team
+                                    </h5>
+                                    <span class="text-muted small">IT Support / End-User Computing</span>
+                                </div>
+                                <span class="badge bg-light text-dark small">
+                                    Feb 2025 - Aug 2025
+                                </span>
+                            </div>
+                            <ul class="small mb-0">
+                                <li>
+                                    Re-imaged and configured a range of devices on-site to meet corporate
+                                    standards.
+                                </li>
+                                <li>
+                                    Managed users on Access Rights Manager (ARM) and ensured correct group
+                                    membership.
+                                </li>
+                                <li>
+                                    Resolved technical support tickets for a range of user issues.
+                                </li>
+                                <li>
+                                    Monitored and scanned devices flagged as potential security risks.
+                                </li>
+                                <li>
+                                    Assisted with troubleshooting, port patching and general hardware
+                                    maintenance.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 position-relative">
+                    <div class="timeline-dot"></div>
+                    <div class="card border-0 shadow-sm timeline-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <h5 class="card-title mb-0">
+                                        DSPCA – Care Assistant Volunteer
+                                    </h5>
+                                    <span class="text-muted small">Volunteer Role</span>
+                                </div>
+                                <span class="badge bg-light text-dark small">
+                                    Feb 2019 - Apr 2019
+                                </span>
+                            </div>
+                            <ul class="small mb-0">
+                                <li>
+                                    Provided comfort to sick or injured animals with gentle handling and
+                                    careful monitoring.
+                                </li>
+                                <li>
+                                    Maintained a safe environment through regular cleaning and proper waste
+                                    disposal.
+                                </li>
+                                <li>
+                                    Collaborated with veterinary staff during routine check-ups and assisted
+                                    with treatments.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section-padding bg-soft">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle mb-3">
+                Skills developed through coursework, labs and hands-on projects.
+            </p>
+
+            <div class="mb-3 d-flex flex-wrap gap-2">
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Linux</span>
+                <span class="skill-badge">Routing &amp; Switching</span>
+                <span class="skill-badge">Scripting &amp; Automation</span>
+                <span class="skill-badge">Information Security</span>
+                <span class="skill-badge">Windows</span>
+                <span class="skill-badge">Cisco IOS</span>
+            </div>
+
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-borderless align-middle mb-0 table-skills">
+                            <tbody>
+                                <tr>
+                                    <th>Technical Knowledge</th>
+                                    <td>
+                                        Experience with SQL, Linux, routing and switching, scripting and
+                                        automation, information security and Windows environments.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Cisco Networking</th>
+                                    <td>
+                                        Comfortable with Cisco IOS commands, configuring routers and switches,
+                                        creating VLANs and using Cisco Packet Tracer.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Linux &amp; Cloud Shell</th>
+                                    <td>
+                                        Using Google Cloud Shell, managing file permissions, creating and
+                                        running scripts, and working with encryption and decryption.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Databases</th>
+                                    <td>
+                                        Designing and creating databases, writing SQL queries and managing
+                                        relational data using tools such as Supabase.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Communication Skills</th>
+                                    <td>
+                                        Able to convey complex information clearly and effectively, developed
+                                        through team projects and customer-facing experience.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Problem-Solving</th>
+                                    <td>
+                                        Identifying and analysing challenges, then applying critical thinking
+                                        to find practical, efficient solutions.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies & Interests -->
+    <section id="hobbies" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Hobbies &amp; Interests</h2>
+            <p class="section-subtitle mb-3">
+                A few things I enjoy outside of IT.
+            </p>
+            <ul class="mb-0">
+                <li>
+                    Advanced knowledge and experience in digital music/audio production, including
+                    mixing and mastering.
+                </li>
+                <li>Hiking and exploring new trails.</li>
+                <li>PC building and hardware tinkering.</li>
+                <li>Competitive gaming and strategy-based games.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section id="languages" class="section-padding bg-soft">
+        <div class="container">
+            <h2 class="section-title">Languages</h2>
+            <p class="section-subtitle mb-4">
+                Language proficiency levels.
+            </p>
+
+            <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <strong>English</strong>
+                    <span class="small text-muted">Native</span>
+                </div>
+                <div class="lang-bar mt-2">
+                    <div class="lang-bar-fill" data-level="100"></div>
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <strong>Russian</strong>
+                    <span class="small text-muted">Fluent</span>
+                </div>
+                <div class="lang-bar mt-2">
+                    <div class="lang-bar-fill" data-level="95"></div>
+                </div>
+            </div>
+
+            <div class="mb-2">
+                <div class="d-flex justify-content-between align-items-baseline">
+                    <strong>Spanish</strong>
+                    <span class="small text-muted">Intermediate</span>
+                </div>
+                <div class="lang-bar mt-2">
+                    <div class="lang-bar-fill" data-level="60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle mb-4">
+                Get in touch about opportunities, projects or references.
+            </p>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Details</h5>
+                            <p class="mb-3">
+                                I am actively seeking work placement opportunities. Feel free
+                                to reach out via email, or use the contact form to send a message directly.
+                            </p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">
+                                    <strong>Email:</strong>
+                                    <a href="mailto:x00202506@mytudublin.ie">x00202506@mytudublin.ie</a>
+                                </li>
+                                <li class="mb-2">
+                                    <strong>Location:</strong> Dublin, Ireland
+                                </li>
+                            </ul>
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#contactModal"
+                            >
+                                Open contact form
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">At a glance</h5>
+                            <ul class="small mb-0">
+                                <li>Available for work placement from 01/01/2026.</li>
+                                <li>Open to on-site, hybrid or remote roles.</li>
+                                <li>Particularly interested in Cybersecurity, systems admin, networking and IT Support.</li>
+                                <li>References from academic staff and supervisors available on request.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="contactModalLabel"
+        aria-hidden="true"
+    >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Rolando</h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <!-- This form is static. I can wire it to a backend or service later (If I have time in the future ofc) -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Name</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nameInput"
+                                placeholder="Your name"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="emailInput"
+                                placeholder="your@email.com"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageInput" class="form-label">Message</label>
+                            <textarea
+                                class="form-control"
+                                id="messageInput"
+                                rows="4"
+                                placeholder="How can I help?"
+                            ></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">
+                            Send
+                        </button>
+                        <p class="small text-muted mt-2 mb-0">
+                            This is a front-end demo form for portfolio purposes. in a real deployment
+                            it would be connected to an email or backend service.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button (JS dynamic content) -->
+    <button
+        id="backToTop"
+        class="btn btn-dark rounded-circle"
+        aria-label="Back to top"
+    >
+        ↑
+    </button>
+
+    <footer class="bg-white">
+        <div class="container text-center">
+            &copy; <span id="year"></span> Rolando Markul. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (with Popper) -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Bootstrap bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- My shared JS -->
+    <script src="script.js"></script>
+    </body>
+    </html>
+
+
+</body>
+</html>

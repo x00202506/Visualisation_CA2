@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bootstrap Features Used | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons (for sun/moon) -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="features-page">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">← Back to Portfolio</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarFeatures"
+                aria-controls="navbarFeatures"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarFeatures">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <span class="nav-link disabled">Bootstrap Features</span>
+                    </li>
+                    <!-- Theme toggle -->
+                    <li class="nav-item d-flex align-items-center ms-lg-3 mt-2 mt-lg-0">
+                        <div id="themeToggleWrapper" class="d-flex align-items-center">
+                            <i id="themeIcon" class="bi bi-sun-fill me-1"></i>
+                            <div class="form-check form-switch m-0">
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="themeToggle"
+                                    aria-label="Toggle dark mode"
+                                />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="py-5">
+        <div class="container">
+            <h1 class="section-title mb-2">Bootstrap Features Used</h1>
+            <p class="section-subtitle mb-4">
+                A technical breakdown of the Bootstrap components, utilities, and features used in my one-page
+                interactive portfolio website.
+            </p>
+
+            <!-- Hero Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">Hero Section</h4>
+                <ul>
+                    <li>
+                        <strong>Grid system:</strong>
+                        <code>.container</code>, <code>.row</code>, <code>.col-md-*</code>, <code>.col-lg-*</code>
+                        used to create a responsive two-column layout for my introduction text and profile image.
+                    </li>
+                    <li>
+                        <strong>Buttons:</strong>
+                        Primary and outline buttons (<code>.btn</code>, <code>.btn-outline-light</code>,
+                        <code>.btn-lg</code>) used for the “Contact” and “View projects” calls-to-action.
+                    </li>
+                    <li>
+                        <strong>Images:</strong>
+                        Responsive hero portrait styled using <code>.img-fluid</code> principles with a custom
+                        circular frame.
+                    </li>
+                    <li>
+                        <strong>Utility classes:</strong>
+                        Spacing and typography utilities such as <code>.mt-*</code>, <code>.mb-*</code>,
+                        <code>.fw-bold</code>, and <code>.text-muted</code> used to control spacing and text
+                        hierarchy.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- About Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">About Me Section</h4>
+                <ul>
+                    <li>
+                        <strong>Cards:</strong>
+                        <code>.card</code> and <code>.card-body</code> used to present the About Me content in a
+                        structured panel.
+                    </li>
+                    <li>
+                        <strong>Grid & layout:</strong>
+                        <code>.container</code> and <code>.row</code> used to align the card within the page.
+                    </li>
+                    <li>
+                        <strong>Utility classes:</strong>
+                        Headings and supporting text styled with <code>.mb-*</code>, <code>.lead</code>, and
+                        custom section title classes.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">Education Section</h4>
+                <ul>
+                    <li>
+                        <strong>Cards:</strong>
+                        Education details displayed inside a <code>.card</code> with <code>.card-body</code> for a
+                        clear container.
+                    </li>
+                    <li>
+                        <strong>Tables:</strong>
+                        GPA performance by year presented using <code>.table</code> and <code>.table-bordered</code>
+                        to structure rows and columns.
+                    </li>
+                    <li>
+                        <strong>Utility classes:</strong>
+                        <code>.mb-4</code>, <code>.mt-2</code>, and <code>.small</code> used to format spacing and
+                        footnote text.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Work Experience Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">Work Experience Section</h4>
+                <ul>
+                    <li>
+                        <strong>Cards:</strong>
+                        Each role (ICT End User Team, volunteer etc.) is displayed inside a <code>.card</code> with
+                        headings and bullet-point responsibilities.
+                    </li>
+                    <li>
+                        <strong>Grid system:</strong>
+                        <code>.row</code> and <code>.col-lg-6</code> create a responsive two-column layout for the
+                        different positions.
+                    </li>
+                    <li>
+                        <strong>Lists:</strong>
+                        <code>.list-unstyled</code> used to present concise responsibility bullets without default
+                        browser bullets.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">Projects Section</h4>
+                <ul>
+                    <li>
+                        <strong>Cards:</strong>
+                        Project information presented using <code>.card</code>, <code>.card-body</code>, and
+                        <code>.shadow-sm</code> for separation and depth.
+                    </li>
+                    <li>
+                        <strong>Buttons & links:</strong>
+                        Project buttons use <code>.btn</code> and <code>.btn-primary</code> for consistent styling
+                        with other interactive elements.
+                    </li>
+                    <li>
+                        <strong>Grid & layout:</strong>
+                        <code>.row</code> and <code>.col-lg-*</code> manage the primary project card and supporting
+                        side content.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Technical Skills Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">Technical Skills Section</h4>
+                <ul>
+                    <li>
+                        <strong>Grid system:</strong>
+                        Two-column layout for skill headings and descriptions built with <code>.row</code> and
+                        <code>.col-md-6</code>.
+                    </li>
+                    <li>
+                        <strong>Badges / tags:</strong>
+                        Custom skill tags styled similarly to Bootstrap <code>.badge</code> components to highlight
+                        technologies (SQL, Linux, Networking, etc.).
+                    </li>
+                    <li>
+                        <strong>Utility classes:</strong>
+                        Spacing and typography via <code>.mb-*</code>, <code>.fw-bold</code>,
+                        <code>.text-muted</code>.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">Languages Section</h4>
+                <ul>
+                    <li>
+                        <strong>Layout utilities:</strong>
+                        <code>.d-flex</code> and <code>.justify-content-between</code> used to position language
+                        names and proficiency labels on a single line.
+                    </li>
+                    <li>
+                        <strong>Custom progress bars:</strong>
+                        Language proficiency visualised using custom <code>.lang-bar</code> and
+                        <code>.lang-bar-fill</code> elements, inspired by Bootstrap’s <code>.progress</code> and
+                        <code>.progress-bar</code> pattern.
+                    </li>
+                    <li>
+                        <strong>Utility classes:</strong>
+                        <code>.small</code> and <code>.text-muted</code> used for the proficiency descriptions.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hobbies & Interests Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">Hobbies &amp; Interests Section</h4>
+                <ul>
+                    <li>
+                        <strong>Lists:</strong>
+                        Hobbies displayed using a clean unordered list with <code>.list-unstyled</code>.
+                    </li>
+                    <li>
+                        <strong>Utility classes:</strong>
+                        Spacing controlled using <code>.mb-*</code> to keep the section consistent with the rest of
+                        the layout.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">Contact Section &amp; Modal</h4>
+                <ul>
+                    <li>
+                        <strong>Modal component:</strong>
+                        Bootstrap <code>.modal</code>, <code>.modal-dialog</code>, <code>.modal-content</code>,
+                        <code>.modal-header</code>, <code>.modal-body</code>, and <code>.btn-close</code> are used to
+                        display a contact form in a dialog.
+                    </li>
+                    <li>
+                        <strong>Form controls:</strong>
+                        Contact form fields styled with <code>.form-control</code> and <code>.form-label</code> for
+                        name, email and message inputs.
+                    </li>
+                    <li>
+                        <strong>Buttons:</strong>
+                        The “Open contact form” trigger uses <code>.btn</code> and <code>.btn-primary</code>; the
+                        form submit button uses <code>.btn</code> styling.
+                    </li>
+                    <li>
+                        <strong>Utilities:</strong>
+                        <code>.mb-3</code>, <code>.small</code>, and <code>.text-muted</code> used for spacing and
+                        helper text.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Navbar, Footer & Global Utilities -->
+            <div class="feature-card">
+                <h4 class="mb-3">Navbar, Footer &amp; Global Utilities</h4>
+                <ul>
+                    <li>
+                        <strong>Navbar component:</strong>
+                        Responsive navigation implemented with <code>.navbar</code>,
+                        <code>.navbar-expand-lg</code>, <code>.navbar-brand</code>, <code>.navbar-nav</code>,
+                        <code>.nav-item</code>, <code>.nav-link</code>, <code>.navbar-toggler</code>, and
+                        <code>.navbar-collapse</code>.
+                    </li>
+                    <li>
+                        <strong>Collapse behaviour:</strong>
+                        Mobile menu uses Bootstrap’s collapse JavaScript via
+                        <code>data-bs-toggle="collapse"</code> and <code>data-bs-target</code>.
+                    </li>
+                    <li>
+                        <strong>Utility classes:</strong>
+                        Global spacing, alignment, and typography controlled using
+                        <code>.mt-*</code>, <code>.mb-*</code>, <code>.px-*</code>, <code>.py-*</code>,
+                        <code>.ms-auto</code>, <code>.text-center</code>, and <code>.fw-bold</code>.
+                    </li>
+                    <li>
+                        <strong>Icons:</strong>
+                        Bootstrap Icons such as <code>bi-sun-fill</code>, <code>bi-moon-fill</code>, and
+                        <code>bi-arrow-up</code> used for the theme toggle and scroll-to-top button.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Custom JavaScript Section -->
+            <div class="feature-card">
+                <h4 class="mb-3">Custom JavaScript Functionality</h4>
+                <p class="mb-2">
+                    In addition to Bootstrap’s built-in behaviour, I implemented custom JavaScript to satisfy the
+                    “dynamic content using JavaScript” requirement:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Dark mode toggle:</strong>
+                        Toggles a <code>.dark-mode</code> class on the <code>&lt;body&gt;</code>, switches the sun/moon
+                        icon, and saves the preference using <code>localStorage</code>.
+                    </li>
+                    <li>
+                        <strong>Scroll-to-top button:</strong>
+                        Shows and hides a floating button based on scroll position and scrolls smoothly to the top of
+                        the page when clicked.
+                    </li>
+                    <li>
+                        <strong>Animated language bars:</strong>
+                        Uses <code>data-level</code> attributes on language bars to animate their widths when the
+                        section comes into view.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hosting URL -->
+            <div class="feature-card">
+                <h4 class="mb-3">Website Hosting URL</h4>
+                <p class="mb-1">
+                    My portfolio website is hosted at the following URL:
+                </p>
+                <p class="text-muted fst-italic">
+                    <!-- TODO: I need to first create GITHUB page and then paste my URL below -->
+                    https://your-hosted-portfolio-url.com
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            &copy; <span id="year"></span> Portfolio Bootstrap Features Page.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
