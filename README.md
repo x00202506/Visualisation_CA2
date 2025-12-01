@@ -12,3 +12,5 @@
 - When the extention is installed, go to index.html and click "Go Live" to Open my Web Page
 - There is both a Light mode and Dark mode for my web page
 - The Hosted URL can be found on the web page also (In the exact way the CA instructions ask)
+- I have it here in the README.md file below also just in case:
+- https://x00202506.github.io/Visualisation_CA2/
