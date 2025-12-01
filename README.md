@@ -11,3 +11,4 @@
 - I used Live Server for this CA, so make sure you have that installed as an extension.
 - When the extention is installed, go to index.html and click "Go Live" to Open my Web Page
 - There is both a Light mode and Dark mode for my web page
+- The Hosted URL can be found on the web page also (In the exact way the CA instructions ask)
